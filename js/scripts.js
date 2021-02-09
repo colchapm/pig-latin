@@ -15,4 +15,13 @@ function pigLatin(element) {
 
 
 
+  // Test: "It will add 'way' to the end of words that begin with a vowel"
+  // Expect (pigLatin("orange)).toEqual("orangeway");
 
+  function pigLatin(element) {
+    if (element[0] === "a" || element[0] === "e" || element[0] === "i" || element[0] === "o" || element[0] === "u") {
+      return element += "way";
+    } else {
+      return false
+    }
+  };
