@@ -20,6 +20,14 @@ Practice project created for Epicodus coding bootcamp. The goal of this project 
 * Navigate to the top level of the directory
 * Open index.html in your browser
 
+### Tests
+
+**Test 1**
+Describe: `pigLatin()`
+Test: "It will find if a word starts with a vowel"
+Expect (pigLatin("orange")).toEqual("true");
+
+
 ### Known Bugs
 
 * None
