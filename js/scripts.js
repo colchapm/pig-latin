@@ -30,16 +30,19 @@ function pigLatin(element) {
 
 
 // #3
-// Test: "It will find if a word starts with a consonant"
-// Expect (pigLatin("carpet")).toEqual("true");
+// Test: "move first consonant to the end of word and add "ay"
+// Expect (pigLatin("carpet")).toEqual("arpetcay");
 
 function pigLatin(element) {
   if (element[0] === "a" || element[0] === "e" || element[0] === "i" || element[0] === "o" || element[0] === "u") {
     return element += "way";
   } else {
-    return false
+    return element.substr(1) + element[0] + "ay";
   }
 };
+
+
+
 
 // RULE #1 -
 // For words beginning with a vowel, add "way" to the end.
