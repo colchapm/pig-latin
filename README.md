@@ -31,6 +31,9 @@ Expect (pigLatin("orange")).toEqual("true");
 Test: "It will add 'way' to the end of words that begin with a vowel"
 Expect (pigLatin("orange)).toEqual("orangeway");
 
+**Test 3**
+Test: "It will find if a word starts with a consonant"
+Expect (pigLatin("carpet")).toEqual("true");
 
 ### Known Bugs
 

@@ -1,5 +1,7 @@
 
 // Describe: `pigLatin()`
+
+// #1
 // Test: "It will find if a word starts with a vowel"
 // Expect(pigLatin("orange")).toEqual("true");
 
@@ -14,9 +16,9 @@ function pigLatin(element) {
   };
 
 
-
-  // Test: "It will add 'way' to the end of words that begin with a vowel"
-  // Expect (pigLatin("orange)).toEqual("orangeway");
+// #2
+// Test: "It will add 'way' to the end of words that begin with a vowel"
+// Expect (pigLatin("orange)).toEqual("orangeway");
 
   function pigLatin(element) {
     if (element[0] === "a" || element[0] === "e" || element[0] === "i" || element[0] === "o" || element[0] === "u") {
@@ -25,3 +27,33 @@ function pigLatin(element) {
       return false
     }
   };
+
+
+// #3
+// Test: "It will find if a word starts with a consonant"
+// Expect (pigLatin("carpet")).toEqual("true");
+
+function pigLatin(element) {
+  if (element[0] === "a" || element[0] === "e" || element[0] === "i" || element[0] === "o" || element[0] === "u") {
+    return element += "way";
+  } else {
+    return false
+  }
+};
+
+// RULE #1 -
+// For words beginning with a vowel, add "way" to the end.
+// test 1 and 2
+
+// RULE #2 -
+// For words beginning with one or more consonants, move all of the first consecutive consonants to the end, and add "ay".
+
+1 - find words with consonants
+2 - move first consonant to end of word
+2.5 - move first and second consonant to end of word
+3 - add "ay" to end of word
+
+// RULE #3 -
+// If the first consonants include "qu", move the "u" along with the "q". Don't forget about words like "squeal" where "qu" doesn't come first!
+
+
